@@ -1,0 +1,33 @@
+import React from "react";
+
+function App() {
+  const collegeName = "Muffakham Jah College of Engineering & Technology";
+  const department = "Computer Science & Engineering";
+  const currentDate = new Date().toDateString();
+
+  return (
+    <div className="App">
+      <h1>{collegeName}</h1>
+      <h2 style={{ color: "blue" }}>{department}</h2>
+      
+      <nav>
+        <a href="#">Home</a> | <a href="#">Faculty</a> | <a href="#">Students</a>
+      </nav>
+
+      <p>Today's Date: {currentDate}</p>
+
+      <GetVision />
+    </div>
+  );
+}
+
+function GetVision() {
+  return (
+    <div>
+      <h3>Vision</h3>
+      <p>To contribute competent computer science professionals to meet evolving societal needs.</p>
+    </div>
+  );
+}
+
+export default App;

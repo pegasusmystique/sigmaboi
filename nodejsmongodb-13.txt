@@ -1,0 +1,33 @@
+var MongoClient = require('mongodb').MongoClient;
+var url = "mongodb://127.0.0.1:27017/mymongodb1";
+
+MongoClient.connect(url, function(err, db) {
+  if (err) throw err;
+  console.log("Database created!");
+  db.close(); // Close the DB connection after database creation
+});
+
+MongoClient.connect(url, function(err, db) {
+  if (err) throw err;
+  var dbo = db.db("mymongodb1");
+  dbo.createCollection("student", function(err, res) {
+    if (err) throw err;
+    console.log("Collection created!");
+    db.close(); // Close the DB connection after collection creation
+  });
+});
+---------------------------------------------------------------------------
+
+// Write a Node.js program to create DB and Collections in 
+// MongoDB 
+//  Steps to be followed 
+// 1. Create folder 
+// 2. Open VS Code 
+// 3. Goto file->open folder and select folder 
+// 4. Open terminal and execute: 
+// i. In College Proxy: npm config set proxy http://10.2.0.25:3128 
+// ii. Run npm init -y 
+// iii. Run npm install mongodb@4.1.0 
+// 5. Click new file in the explorer window 
+// 6. Name the file as index.js 
+// 7. Type the code in index.js file
