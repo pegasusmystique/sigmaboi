@@ -55,3 +55,28 @@ app.listen(8080);
     </center>
   </body>
 </html>
+
+-------------------------------------------------------------------------------
+<!-- Write a program to implement MVC architecture 
+ Instructions to be followed for implementation of the program: 
+a. Create data model using arrays with students sample data 
+b. Create views folder with ejs file 
+c. Write controller logic 
+ Steps to be followed 
+1. Create folder 
+2. Open VS Code 
+3. Goto file->open folder and select folder 
+4. Open terminal and execute: 
+ In College Proxy: npm config set proxy http://10.2.0.25:3128 
+ Run npm init -y 
+ Run npm install express ejs 
+5. Click new file in the explorer window 
+6. Name the file as index.js 
+7. Type the code in index.js file 
+8. Create views folder 
+9. Name the file as memo.ejs 
+10. Type the code in memo.ejs 
+11. Goto Terminal->New Terminal 
+12. In the terminal run node index.js 
+13. Open webbrowser and type url : 
+ http://localhost:8080/ -->
